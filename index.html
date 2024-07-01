@@ -14,7 +14,7 @@
             padding: 0;
         }
         header {
-            background-image: url('https://via.placeholder.com/1500x500'); /*https://photos.google.com/u/1/search/_cAF1QipPspYGTdd1F2qM3oD2TtdbHr09VneofZuY_/photo/AF1QipMbNHodRTJVj3kXA8QG4thNsDQ7jY8Z5czyasu8*/
+            background-image: url('https://via.placeholder.com/1500x500'); /* Reemplaza con la URL de tu imagen */
             background-size: cover;
             color: #FFFFFF;
             padding: 60px 0;
@@ -60,14 +60,14 @@
             font-family: 'Cormorant Garamond', serif;
             text-align: center;
         }
-        .bio, .projects, .blog, .contact, .videos {
+        .bio, .projects, .blog, .contact, .videos, .calendar {
             background-color: #FFFFFF;
             padding: 40px;
             margin-bottom: 40px;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        .bio p, .projects p, .blog p, .contact p, .videos p {
+        .bio p, .projects p, .blog p, .contact p, .videos p, .calendar p {
             font-size: 1.2em;
             line-height: 1.6em;
             text-align: center;
@@ -111,6 +111,21 @@
             font-weight: bold;
             font-size: 1.6em;
         }
+        .event {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .event img {
+            border-radius: 10px;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .event-details {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -124,6 +139,7 @@
         <a href="#blog">Blog</a>
         <a href="#contacto">Contacto</a>
         <a href="#videos">Videos</a>
+        <a href="#calendario">Calendario</a>
     </nav>
     <div class="container">
         <section id="biografia" class="bio">
@@ -164,6 +180,26 @@
             <p>Explora mis videos sobre diferentes temas de salud y bienestar.</p>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/tu_video_id" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="calendario" class="calendar">
+            <h2 class="section-title">Calendario de Eventos</h2>
+            <div class="event">
+                <img src="path/to/IMG_9598.jpg" alt="Seminario Predoctoral">
+                <div class="event-details">
+                    <h3>Seminario Predoctoral</h3>
+                    <p><strong>Fecha:</strong> Miércoles 13 de Diciembre, 7pm</p>
+                    <p><strong>Coordinador:</strong> Dr. Jorge Valdéz</p>
+                    <p><strong>Tema:</strong> Explorando la relación entre la biopelícula y el síndrome de blefaritis y ojo seco</p>
+                    <p><strong>Enlace Zoom:</strong> <a href="https://itesm.zoom.us/j/84375609368">https://itesm.zoom.us/j/84375609368</a></p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="path/to/C0795E9A-E7AE-4307-BEB0-095D6D154262.jpeg" alt="Victoria Araiza">
+                <div class="event-details">
+                    <h3>Evento Pasado</h3>
+                    <p><strong>Descripción:</strong> Información sobre eventos anteriores</p>
+                </div>
             </div>
         </section>
     </div>
